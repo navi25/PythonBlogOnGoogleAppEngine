@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Navi's Blog</h1>
+
+<div class="blog">
+    <div class="blog-title"><a href="{{blog.url}}">{{blog.title}}</a></div>
+    <div class="blog-date">{{blog.date_created}}</div>
+    <pre class="blog-body">{{blog.body}}</pre>
+</div>
+
+{% endblock %}
+
